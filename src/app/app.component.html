@@ -1,0 +1,13 @@
+<div>
+  <div id="header">
+    <h1>Trafikhändelser ifrån Sveriges Radio:</h1>
+    <p>Ursprungligt API (XML-format): <a href="http://api.sr.se/api/v2/traffic/messages" style="color: white">http://api.sr.se/api/v2/traffic/messages</a></p>
+  </div>
+  <div class="message" *ngFor="let message of data.messages"> 
+      <h3>{{message.subcategory}}, {{message.title}}:</h3>
+      <p>{{message.description}}</p>
+      <hr>
+  </div>
+ </div>
+
+
